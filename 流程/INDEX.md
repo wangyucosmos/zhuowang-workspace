@@ -34,6 +34,7 @@ Claude、Codex／ChatGPT、DeepSeek 三方各有自己的本地技能机制（`.
 | [长H5原型.md](长H5原型.md) | 要出活动页原型（HTML 长页 / 效果图 / Figma） |
 | [Word交付.md](Word交付.md) | 产出正式 Word（策划案、活动规则、客服文档） |
 | [省份规则更新.md](省份规则更新.md) | 用旧规则 Word + 最新页面截图，更新某省规则或客服文档 |
+| [交付前检查.md](交付前检查.md) | **交付任何成品前，无条件先跑** |
 | [收工沉淀.md](收工沉淀.md) | **每次收工前，无条件跑** |
 
 ---
@@ -45,11 +46,13 @@ Claude、Codex／ChatGPT、DeepSeek 三方各有自己的本地技能机制（`.
 - **Claude Code** —— 项目 `.claude/skills/` 下的薄触发技能，会话内自动触发
 - **Codex** —— `~/.codex/skills/` 下的薄触发技能
 - **DeepSeek Harness** —— `.dsh/skills/` 下的薄触发技能
-- **ChatGPT 网页版** —— **没有技能机制**，只能在项目自定义指令里写死「每次开工先用 GitHub Connector
-  读 `wangyucosmos/zhuowang-workspace` 的 `AGENTS.md`、`卓望.md`、`进度.md`、`流程/INDEX.md`」
+- **ChatGPT 网页版／Codex** —— 账号侧 Skill（如「卓望活动运营」）**只能当触发层**。
+  Skill 本体存在 OpenAI 账号里、**不在本仓库**，Claude 与 DeepSeek 物理上读不到，也没有版本历史可供验证，
+  因此**任何业务知识和执行步骤都不得写进 Skill 正文**，只写「先读仓库」。没有 Skill 机制时，
+  在项目自定义指令里写同一句话。
 
 四方共同认的是**本仓库**，不是某个本地技能文件。本地技能只是「把它们赶去读仓库」的开关。
 
 ---
 
-最后更新：2026-08-25
+最后更新：2026-08-31
