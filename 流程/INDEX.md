@@ -36,10 +36,16 @@ Claude、Codex／ChatGPT、DeepSeek 三方各有自己的本地技能机制（`.
 | [省份规则更新.md](省份规则更新.md) | 用旧规则 Word + 最新页面截图，更新某省规则或客服文档 |
 | [交付前检查.md](交付前检查.md) | **交付任何成品前，无条件先跑** |
 | [收工沉淀.md](收工沉淀.md) | **每次收工前，无条件跑** |
+| [并行比稿.md](并行比稿.md) | 用户让多个工具各做一版来对比时；比稿期间不写仓库 |
 
 ---
 
 ## 三方接入方式
+
+**2026-09-15 起本仓库只有一份实体**：`/Users/rainiesmac-15/Documents/我的知识库/卓望工作相关/卓望/`。
+Claude Code（`claude code new/卓望/卓望知识库/zhuowang-workspace`）、Codex（`CODEX项目/拓维卓望/卓望知识库/zhuowang-workspace`）、
+DeepSeek Harness（`deepseek harness/卓望`）三个入口都是软链到它。本地即最新，GitHub 只做备份与历史；
+「开工先 pull」保留为安全检查。个人知识库总规则见上一级的 `我的知识库/知识库规则.md`。
 
 四个入口的能力不同，接法也不同：
 
@@ -55,4 +61,4 @@ Claude、Codex／ChatGPT、DeepSeek 三方各有自己的本地技能机制（`.
 
 ---
 
-最后更新：2026-08-31
+最后更新：2026-09-15
