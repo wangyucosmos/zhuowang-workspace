@@ -1,0 +1,422 @@
+<title>10月会员促活 · 秋日果园长图 V4</title>
+<style>
+:root{--ink:#1f2328;--ink2:#4a5157;--ink3:#8b9298;--line:#e2e5e8;--bg:#f2f3f5;--ph:#f7f8f9;--link:#2f6fdb;
+  --ac:#C4622D;--acSoft:#FBEDE4;--heroBg:linear-gradient(160deg,#D8823F 0%,#B45B2A 55%,#6B4A2E 100%)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+
+.top{padding:28px 32px 20px;background:#fff;border-bottom:1px solid var(--line)}
+.top h1{margin:0 0 6px;font-size:22px;font-weight:800}
+.top .meta{font-size:12px;color:var(--ink3);margin-bottom:14px}
+.note{background:#fffaf0;border:1px solid #f0dfc0;border-radius:8px;padding:10px 14px;font-size:12px;line-height:1.85;color:#6b5730;max-width:1200px}
+.note b{color:#4a3a15}
+
+.wrap{display:flex;gap:28px;padding:26px 32px 40px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.phone{width:398px;background:#fff;border:1px solid #d5d9dd;border-radius:14px;padding:11px;box-shadow:0 2px 14px rgba(0,0,0,.06)}
+.screen{width:375px;background:var(--bg);border-radius:6px}
+.aside{width:420px;display:flex;flex-direction:column;gap:14px}
+
+/* ===== 头图（照 9 月）===== */
+.hero{background:var(--heroBg);color:#fff;position:relative;padding:12px 12px 14px}
+.htop{display:flex;align-items:center;gap:8px;padding-right:34px}
+.logo{height:26px;padding:0 8px;border:1px dashed rgba(255,255,255,.7);border-radius:6px;font-size:10.5px;display:flex;align-items:center;white-space:nowrap}
+.htop .num{flex:1;text-align:center;font-size:13px;font-weight:800;letter-spacing:.5px}
+.htop .logout{font-size:11px;border:1.5px solid #fff;border-radius:12px;padding:3px 12px;font-weight:700;white-space:nowrap}
+.edge{position:absolute;right:0;display:flex;flex-direction:column;gap:6px}
+.edge.t{top:10px}.edge.b{bottom:60px}
+.edge div{background:rgba(255,255,255,.92);color:var(--ac);font-size:10.5px;font-weight:800;line-height:1.25;padding:6px 5px;border-radius:9px 0 0 9px;width:28px;text-align:center}
+.edge.b div{width:auto;padding:6px 8px;font-size:10.5px;line-height:1.3}
+.kpill{display:inline-block;margin:14px 0 0 12px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.5);border-radius:14px;padding:3px 12px;font-size:11px}
+.htitle{padding:8px 60px 0 12px;font-size:30px;font-weight:900;letter-spacing:1px;line-height:1.3;text-shadow:0 2px 6px rgba(0,0,0,.18)}
+.hvis{margin:10px 46px 0 12px;height:150px;border:1px dashed rgba(255,255,255,.6);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:11px;opacity:.85;text-align:center;line-height:1.7}
+.ainote{font-size:9.5px;opacity:.75;margin:10px 0 0 12px}
+
+/* 快捷导航 + 查看抽奖机会 */
+.quick{display:flex;gap:6px;margin:10px 10px 0}
+.quick div{flex:1;background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 1px 6px;text-align:center;font-size:9.5px;color:var(--ink2);white-space:nowrap}
+.quick i{display:block;width:28px;height:28px;margin:0 auto 4px;border-radius:8px;background:var(--ph);border:1px dashed #c8cdd2}
+.chance{margin:10px 10px 0;display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:7px 14px 7px 8px;font-size:13px;font-weight:800;color:var(--ac)}
+.chance i{width:20px;height:20px;border-radius:50%;background:var(--ph);border:1px dashed #c8cdd2}
+
+/* 板块横幅 + 卡片 */
+.sec{margin:14px 10px 0}
+.banner{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--ac);border-radius:10px 10px 0 0;padding:9px 12px;border-bottom:0}
+.banner .no{font-size:10px;font-weight:700;color:#fff;background:var(--ac);border-radius:3px;padding:1px 6px}
+.banner h3{margin:0;font-size:14.5px;font-weight:800;color:var(--ac);flex:1}
+.banner .hand{width:22px;height:22px;border:1px dashed var(--ac);border-radius:6px;opacity:.7}
+.card{background:#fff;border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;padding:12px;position:relative}
+.subline{text-align:center;font-size:11.5px;color:var(--ink2);margin:2px 0 10px}
+.subline::before,.subline::after{content:"— ";color:var(--ink3)}
+.subline::after{content:" —"}
+.desc{font-size:11.5px;color:var(--ink3);margin-top:4px;line-height:1.7}
+.btn{display:block;margin:11px auto 0;width:100%;max-width:300px;height:34px;line-height:34px;text-align:center;background:var(--ac);color:#fff;font-size:13.5px;font-weight:700;border-radius:17px}
+.btn.big{height:42px;line-height:42px;font-size:17px;font-weight:800;border-radius:21px;letter-spacing:3px;max-width:100%}
+.btn.sm{height:28px;line-height:28px;font-size:12px;width:78px;margin:0;flex:0 0 78px}
+.btn.ghost{background:transparent;color:var(--ac);border:1px solid var(--ac);line-height:26px}
+.btn.grey{background:#dfe2e5;color:#9aa0a6}
+.cta{position:relative;margin-top:14px}
+.cost{position:absolute;left:50%;top:-11px;transform:translateX(-50%);font-size:10px;background:#fff;border:1px solid var(--ac);color:var(--ac);border-radius:9px;padding:1px 9px;white-space:nowrap;z-index:1}
+.hint{text-align:center;font-size:11px;color:var(--ink3);margin-top:8px}
+.hintline{text-align:center;font-size:11px;color:var(--ac);font-weight:700;margin-top:9px}
+.small{font-size:10.5px;color:var(--ink3);text-align:center;line-height:1.7;margin-top:10px}
+.mytab{position:absolute;right:0;background:var(--ac);color:#fff;font-size:11px;writing-mode:vertical-rl;padding:8px 5px;border-radius:8px 0 0 8px;letter-spacing:2px}
+
+/* 50G 大条 */
+.g50{margin-top:6px;position:relative;display:flex;align-items:center;gap:8px;background:var(--ph);border:1px dashed #c8cdd2;border-radius:10px;padding:12px 10px}
+.g50 .zero{width:64px;height:64px;border-radius:10px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:var(--ac)}
+.g50 .zero small{font-size:10px;font-weight:700;margin-left:2px;margin-top:10px}
+.g50 .gt{flex:1;line-height:1.3}
+.g50 .gt b{display:block;font-size:24px;font-weight:900;color:var(--ac)}
+.g50 .gt i{font-style:normal;font-size:11px;color:var(--ink2);display:block}
+.g50 .ling{width:54px;height:54px;border-radius:50%;background:var(--ac);color:#fff;font-size:20px;font-weight:900;display:flex;align-items:center;justify-content:center;flex:0 0 54px}
+.g50 .lim{position:absolute;right:8px;top:-9px;font-size:10px;background:#fff;border:1px solid var(--ac);color:var(--ac);border-radius:9px;padding:1px 8px}
+
+/* 幸运7日签（照图5）*/
+.bag{position:relative;margin:4px auto 0;width:200px;height:150px;border:1px dashed #c8cdd2;border-radius:14px;background:var(--ph);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:14px;font-size:10.5px;color:var(--ink3)}
+.bag .lab{position:absolute;top:12px;font-size:10.5px}
+.bag .badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:10.5px;background:#fff;border:1px solid var(--ac);color:var(--ac);border-radius:10px;padding:2px 10px;font-weight:700}
+.bag .btn{width:130px;height:38px;line-height:38px;font-size:15px;font-weight:800;margin:0;border-radius:19px}
+.prow{display:flex;gap:6px;margin-top:12px;background:var(--ph);border-radius:10px;padding:8px}
+.pbig{flex:0 0 104px;height:96px;border:1px dashed #c8cdd2;border-radius:8px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:10.5px;color:var(--ink3)}
+.pbig b,.psm b{font-size:11.5px;color:var(--ink2)}
+.psm{flex:1;min-width:0;height:96px;border:1px dashed #c8cdd2;border-radius:8px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:10px;color:var(--ink3);text-align:center;white-space:nowrap}
+.psm b{font-size:10.5px}
+.usebar{display:flex;align-items:center;gap:8px;margin-top:10px}
+.usebar .u1{flex:1;border:1.5px solid var(--ac);color:var(--ac);border-radius:16px;padding:6px 10px;font-size:11.5px;font-weight:700;text-align:center}
+.usebar .u2{flex:0 0 84px;background:var(--ac);color:#fff;border-radius:16px;padding:7px 0;font-size:11.5px;font-weight:800;text-align:center}
+
+/* 累计打卡（照图7，横排）*/
+.crow{display:flex;align-items:center;gap:10px;padding:9px 0}
+.crow+.crow{border-top:1px solid #eef0f2}
+.crow .pill{background:var(--ac);color:#fff;font-size:12px;font-weight:800;border-radius:13px;padding:4px 12px}
+.crow .ci{width:40px;height:40px;border-radius:8px;background:var(--ph);border:1px dashed #c8cdd2;flex:0 0 40px}
+.crow .ct{flex:1;font-size:12.5px;line-height:1.5;font-weight:700}
+.crow .ct b{color:var(--ac)}
+.crow .ct i{display:block;font-style:normal;font-size:11px;color:var(--ink2);font-weight:400}
+
+/* 一周专享 */
+.tabs{display:flex;gap:5px;margin-top:2px}
+.tabs span{flex:1;text-align:center;font-size:10.5px;padding:6px 0;border-radius:13px;background:var(--ph);color:var(--ink3);border:1px solid var(--line)}
+.tabs span.on{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:700}
+.tabbody{margin-top:10px;background:var(--ph);border-radius:8px;padding:10px;display:flex;gap:10px;align-items:center}
+.tabbody .tb{flex:1;font-size:11.5px;line-height:1.6;color:var(--ink2)}
+.tabbody .tb b{display:block;font-size:12.5px;color:var(--ink)}
+.tabbody .tp{width:64px;height:56px;border:1px dashed #c8cdd2;border-radius:6px;background:#fff;font-size:10px;color:var(--ink3);display:flex;align-items:center;justify-content:center}
+
+/* 摇一摇 */
+.scene{position:relative;margin-top:2px;background:var(--ph);border-radius:9px;overflow:hidden}
+.scene svg{display:block;width:100%;height:auto}
+svg text{font-family:inherit;fill:#8b9298;font-size:10px}
+.ph-shape{fill:#fff;stroke:var(--ac);stroke-width:1.2;stroke-dasharray:4 3}
+.gray{fill:#e6e9ec;stroke:#b7bdc3;stroke-width:1.2}
+.gray2{fill:#d5d9dd;stroke:#b7bdc3;stroke-width:1.2}
+.acl{stroke:var(--ac);stroke-width:1.6;fill:none}
+.mh{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.mh h4{margin:0;font-size:14px;font-weight:800}
+.mh .more{font-size:11px;color:var(--link);white-space:nowrap}
+.leaves{display:flex;gap:8px;margin-top:10px}
+.leaf{flex:1;height:66px;border-radius:8px;border:1px dashed #c8cdd2;background:var(--ph);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10.5px;color:var(--ink3);gap:2px}
+.leaf b{font-size:11.5px;color:var(--ink2)}
+.leaf.got{background:var(--ac);border:1px solid var(--ac);color:#fff}.leaf.got b{color:#fff}
+.vip{margin-top:9px;display:flex;align-items:center;gap:8px;background:var(--acSoft);border-radius:8px;padding:7px 10px;font-size:11px;line-height:1.6;color:var(--ink2)}
+.vip b{color:var(--ac)}
+.bigph{background:var(--ph);border:1px dashed #c8cdd2;border-radius:8px;height:60px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--ink3);margin-top:10px}
+
+/* 任务（照最后一图）*/
+.trow{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #eef0f2}
+.trow:first-of-type{border-top:0}
+.trow .ic{width:38px;height:38px;border-radius:50%;background:var(--ph);border:1px dashed #c8cdd2;flex:0 0 38px}
+.trow .tt{flex:1;min-width:0;line-height:1.45}
+.trow .tt b{font-size:13px;font-weight:700}
+.trow .tt em{font-style:normal;font-size:11px;color:var(--link);font-weight:700;margin-left:4px}
+.trow .tt i{display:block;font-style:normal;font-size:10.5px;color:var(--ink3)}
+
+/* 规则框 */
+.rules{margin:14px 10px 24px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px}
+.rules h4{margin:0 0 8px;font-size:14px;font-weight:800}
+.rules .empty{height:220px;border:1px dashed #c8cdd2;border-radius:8px;background:var(--ph);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--ink3);text-align:center;line-height:1.8}
+
+/* 对比窗口 */
+.cmp{width:398px}
+.cmp .cmphead{margin-bottom:10px}
+.cmp .cmphead .tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#2E6E6A;border-radius:4px;padding:2px 8px;letter-spacing:1px}
+.cmp .cmphead h2{margin:8px 0 3px;font-size:17px;font-weight:800}
+.cmp .cmphead .one{font-size:12px;color:var(--ink2);line-height:1.7}
+.basket{display:flex;align-items:center;gap:10px;background:var(--ph);border-radius:9px;padding:10px 12px}
+.basket .bi{width:46px;height:46px;border-radius:10px;background:#fff;border:1px dashed #c8cdd2;flex:0 0 46px}
+.basket .bt{flex:1;font-size:11.5px;color:var(--ink2);line-height:1.5}
+.basket .bt b{display:block;font-size:18px;font-weight:900;color:var(--ac)}
+.basket .more{font-size:11px;color:var(--link);white-space:nowrap}
+.prog{margin-top:10px}
+.prog .bar{height:10px;border-radius:5px;background:#e6e9ec;overflow:hidden}
+.prog .bar i{display:block;height:100%;width:70%;background:var(--ac);border-radius:5px}
+.prog .pt{display:flex;justify-content:space-between;font-size:10.5px;color:var(--ink3);margin-top:4px}
+.prog .pt b{color:var(--ac)}
+.xrow{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid #eef0f2}
+.xrow:first-of-type{border-top:0}
+.xrow .xi{width:44px;height:44px;border-radius:8px;background:var(--ph);border:1px dashed #c8cdd2;flex:0 0 44px;font-size:9.5px;color:var(--ink3);display:flex;align-items:center;justify-content:center}
+.xrow .xt{flex:1;line-height:1.45}
+.xrow .xt b{display:block;font-size:12.5px;font-weight:700}
+.xrow .xt i{font-style:normal;font-size:11px;color:var(--ac);font-weight:700}
+.xrow .xt em{font-style:normal;font-size:10.5px;color:var(--ink3);margin-left:6px}
+.secttl{font-size:13px;font-weight:800;margin:12px 0 2px}
+
+/* 侧栏 */
+.spec{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.spec h4{margin:0 0 8px;font-size:13px;font-weight:800;color:var(--ac)}
+.spec ul{margin:0;padding-left:16px}
+.spec li{font-size:11.5px;line-height:1.9;color:var(--ink2)}
+.spec .lab{font-weight:700;color:var(--ink)}
+.spec .warn{color:#b4521f;font-weight:700}
+table{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line);font-size:11.5px}
+th{background:#173a5e;color:#fff;text-align:left;padding:8px 10px;font-weight:700}
+td{padding:7px 10px;border-top:1px solid var(--line);line-height:1.7;vertical-align:top;color:var(--ink2)}
+tr:nth-child(even) td{background:#f8fafc}
+td b{color:var(--ink)}
+.chg{color:#b4521f;font-weight:700}.keep{color:#1a7f4b}
+</style>
+
+<div class="top">
+  <h1>10 月会员促活 · 秋日果园「摇一摇」长图 V4</h1>
+  <div class="meta">低保真 · 375 宽长 H5 · 2026-09-16 · 定稿候选：只保留方案 B「果篮分档兑换」 · 确认后进 Figma</div>
+  <div class="note">
+    <b>V4 = V3 的方案 B 单独成稿。</b>骨架沿用 9 月在跑页（五个活动板块 + 横幅），10 月只换三样：
+    <b>① 头图主视觉</b>（夏→秋）、<b>② Slogan</b>、<b>③ 射箭 → 摇一摇 + 果篮分档兑换</b>。其余模块原样，横幅文案换季。<br>
+    <b>果篮逻辑：</b>任务 → 抽奖机会 → 摇一摇（中奖直接得）→ 每摇一次必得 1 个果子（不看中没中）→ 攒到数换三档好礼。给做任务的用户一个确定的保底。<br>
+    <b>低保真约定：</b>灰阶、占位、不画数量库存概率、不画状态栏；秋橙不代表最终视觉。主标题是切图文字，定稿要一次选定。弹窗与状态卡进 Figma 时补。
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ================= 方案 A 长图 ================= -->
+<div class="cmp" id="colA">
+  <div class="cmphead">
+    <span class="tag" style="background:var(--ac)">定稿候选</span>
+    <h2>秋日果园 · 摇一摇 + 果篮兑好礼</h2>
+    <div class="one">头图 → 0 元 50G → 幸运 7 日签 → 累计打卡 → 一周专享 → 摇一摇 → 我的果篮 → 任务专区 → 规则框</div>
+  </div>
+<div class="phone"><div class="screen">
+
+  <!-- 头图 -->
+  <div class="hero">
+    <div class="htop">
+      <div class="logo">中国移动 logo</div><div class="logo">咪咕 logo</div>
+      <div class="num">134****4818</div>
+      <div class="logout">登出</div>
+    </div>
+    <div class="edge t"><div>分享</div><div>规则</div></div>
+    <div class="edge b"><div>十月奖品<br>地址收集</div></div>
+    <div class="kpill">中国移动用户专属活动~</div>
+    <div class="htitle">摇"移"摇！<br>好礼满枝头</div>
+    <div class="hvis">头图主视觉占位<br>秋日果园 · 挂满果子的树<br>话费券 · 流量 · 实物奖品散落</div>
+    <div class="ainote">* 本页面部分元素由 AI 生成</div>
+  </div>
+
+  <!-- 快捷导航 6 格 -->
+  <div class="quick">
+    <div><i></i>领50GB流量</div><div><i></i>幸运7日签</div><div><i></i>打卡好礼</div>
+    <div><i></i>限时福利</div><div><i></i>互动赢奖</div><div><i></i>任务专区</div>
+  </div>
+  <div class="chance"><i></i>查看我的抽奖机会 ></div>
+
+  <!-- 活动1 50G -->
+  <div class="sec">
+    <div class="banner"><span class="no">活动1</span><h3>秋日补给站，流量"移"起收</h3><span class="hand"></span></div>
+    <div class="card">
+      <div class="subline">秋日福利包来啦，追剧观赛免流量</div>
+      <div class="g50">
+        <span class="lim">每月限 1 次</span>
+        <div class="zero">0<small>元</small></div>
+        <div class="gt"><b>50GB</b><i>中国移动咪咕视频<br>定向流量</i></div>
+        <div class="ling">领</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 幸运7日签（独立块，照图5）-->
+  <div class="sec">
+    <div class="banner"><span class="no">活动1</span><h3>幸运 7 日签，开袋就有奖</h3><span class="hand"></span></div>
+    <div class="card">
+      <div class="mytab" style="top:22px">我的奖品</div>
+      <div class="subline">中国移动用户专享，最高 100 元话费</div>
+      <div class="bag">
+        <span class="badge">月享 7 次领取机会</span>
+        <span class="lab">福袋主视觉占位</span>
+        <div class="btn">立即领取</div>
+      </div>
+      <div class="prow">
+        <div class="pbig"><span>奖品位</span><b>100 元话费</b></div>
+        <div class="psm"><span>奖品位</span><b>10GB流量</b></div>
+        <div class="psm"><span>奖品位</span><b>2GB流量</b></div>
+        <div class="psm"><span>奖品位</span><b>100MB流量</b></div>
+      </div>
+      <div class="small">* 中国移动用户专享，每位用户本月最多 7 次抽奖机会；<br>* 每日最多抽 1 次，每抽必中，奖品数量有限，先抽先得</div>
+      <div class="usebar"><div class="u1">领取后 3 天有效，快去使用吧</div><div class="u2">立即使用</div></div>
+    </div>
+  </div>
+
+  <!-- 活动2 累计打卡（横排，照图7）-->
+  <div class="sec">
+    <div class="banner"><span class="no">活动2</span><h3>累计打卡，限量好礼抢先领</h3><span class="hand"></span></div>
+    <div class="card">
+      <div class="crow"><span class="pill">每日打卡</span><span style="flex:1"></span><div class="btn sm">打卡</div></div>
+      <div class="crow"><div class="ci"></div><div class="ct">会员累计打卡<b>10天</b><i>可获得 会员奖品位 *1</i></div><div class="btn sm">领取</div></div>
+      <div class="crow"><div class="ci"></div><div class="ct">非会员累计打卡<b>18天</b><i>可获得 非会员奖品位 *1</i></div><div class="btn sm">领取</div></div>
+      <div class="small">奖品数量有限，先到先得，每月仅限领取 1 种奖品<br>活动时间：暂定至 10 月 31 日</div>
+    </div>
+  </div>
+
+  <!-- 活动3 一周专享 -->
+  <div class="sec">
+    <div class="banner"><span class="no">活动3</span><h3>限时专享活动，趣享金秋好礼</h3><span class="hand"></span></div>
+    <div class="card">
+      <div class="tabs"><span class="on">周一二</span><span>周三</span><span>周四五</span><span>周六日</span></div>
+      <div class="tabbody"><div class="tb"><b>通看券免费领</b>全球通银卡及以上用户，领 5 张咪咕视频通看券，每月限领 1 次</div><div class="tp">权益位</div></div>
+      <div class="btn">立即领取</div>
+    </div>
+  </div>
+
+  <!-- 活动4 摇一摇 -->
+  <div class="sec">
+    <div class="banner"><span class="no">活动4</span><h3>金秋好物，硕果派送中</h3><span class="hand"></span></div>
+    <div class="card">
+      <div class="scene">
+        <svg viewBox="0 0 351 250">
+          <rect x="0" y="224" width="351" height="26" class="gray2"/>
+          <rect x="161" y="130" width="30" height="96" class="gray2"/>
+          <ellipse cx="176" cy="100" rx="130" ry="76" class="gray"/>
+          <circle cx="108" cy="92" r="26" class="ph-shape"/><text x="108" y="96" text-anchor="middle">奖品位</text>
+          <circle cx="176" cy="124" r="26" class="ph-shape"/><text x="176" y="128" text-anchor="middle">奖品位</text>
+          <circle cx="244" cy="92" r="26" class="ph-shape"/><text x="244" y="96" text-anchor="middle">奖品位</text>
+          <path d="M270 218 a19 19 0 1 1 38 0" class="acl"/><path d="M270 218 h38" class="acl"/>
+          <text x="289" y="238" text-anchor="middle">落地裂开</text>
+          <path d="M38 62 q-8 8 0 16 M30 84 q-8 8 0 16" class="acl"/><text x="48" y="92">晃动</text>
+        </svg>
+        <div class="mytab" style="top:38%">我的奖品</div>
+      </div>
+      <div class="cta"><span class="cost">消耗 1 次抽奖机会</span><div class="btn big">摇一摇</div></div>
+      <div class="hint">今日剩余 __ 次 · 去任务专区获取更多机会</div>
+    </div>
+      <div class="card" style="border-top:1px solid var(--line);border-radius:0 0 10px 10px">
+        <div class="mh"><h4>我的果篮</h4><span class="more">果子明细 ›</span></div>
+        <div class="desc">每摇一次必得 1 个果子，不看中没中；攒够就换，月底清零</div>
+        <div class="basket" style="margin-top:10px">
+          <div class="bi"></div>
+          <div class="bt">我的果子<b>7 个</b></div>
+          <div class="more">怎么攒 ›</div>
+        </div>
+        <div class="prog">
+          <div class="bar"><i></i></div>
+          <div class="pt"><span>再摇 <b>3</b> 次，可兑换「流量日包券」</span><span>7 / 10</span></div>
+        </div>
+        <div class="vip"><span style="flex:1">会员每次得 <b>2 个</b>果子，攒得快一倍</span><div class="btn sm ghost">看权益</div></div>
+
+        <div class="secttl">果子兑好礼</div>
+        <div class="xrow"><div class="xi">奖品位</div><div class="xt"><b>流量日包券</b><i>10 个果子</i><em>每月限兑 __ 次</em></div><div class="btn sm grey">差 3 个</div></div>
+        <div class="xrow"><div class="xi">奖品位</div><div class="xt"><b>话费券</b><i>20 个果子</i><em>每月限兑 __ 次</em></div><div class="btn sm grey">差 13 个</div></div>
+        <div class="xrow"><div class="xi">奖品位</div><div class="xt"><b>实物好礼</b><i>30 个果子</i><em>每月限兑 __ 次</em></div><div class="btn sm grey">差 23 个</div></div>
+        <div class="small">果子仅限本月使用，次月 1 日清零；兑换成功后扣减对应果子</div>
+      </div>
+  
+  </div>
+
+  <!-- 活动5 任务（照最后一图）-->
+  <div class="sec">
+    <div class="banner"><span class="no">活动5</span><h3>秋日丰收计划，奖品轻松到手</h3><span class="hand"></span></div>
+    <div class="card">
+      <div class="trow"><div class="ic"></div><div class="tt"><b>新人厚礼</b><em>+5次抽奖机会</em><i>*仅限6个月内未使用咪咕视频的用户</i></div><div class="btn sm">领 取</div></div>
+      <div class="trow"><div class="ic"></div><div class="tt"><b>分享活动</b><em>增加1次抽奖机会</em></div><div class="btn sm">去完成</div></div>
+      <div class="trow"><div class="ic"></div><div class="tt"><b>邀请有礼</b><em>增加5次抽奖机会</em></div><div class="btn sm">去邀请</div></div>
+      <div class="trow"><div class="ic"></div><div class="tt"><b>中国移动App签到</b><i style="color:var(--link);font-weight:700">增加1次抽奖机会</i></div><div class="btn sm">去签到</div></div>
+      <div class="trow"><div class="ic"></div><div class="tt"><b>上云盘App开福袋</b><i style="color:var(--link);font-weight:700">增加1次抽奖机会</i></div><div class="btn sm">去完成</div></div>
+      <div class="trow"><div class="ic"></div><div class="tt"><b>去QQ音乐听歌</b><i style="color:var(--link);font-weight:700">增加1次抽奖机会</i></div><div class="btn sm">去完成</div></div>
+      <div class="trow"><div class="ic"></div><div class="tt"><b>去微博中心赚红包</b><i style="color:var(--link);font-weight:700">增加1次抽奖机会</i></div><div class="btn sm">去完成</div></div>
+      <div class="trow"><div class="ic"></div><div class="tt"><b>去携程签到 好礼不断</b><i style="color:var(--link);font-weight:700">增加1次抽奖机会</i></div><div class="btn sm">去签到</div></div>
+      <div class="trow"><div class="ic"></div><div class="tt"><b>前往美团APP签到</b><i style="color:var(--link);font-weight:700">增加1次抽奖机会</i></div><div class="btn sm">去签到</div></div>
+    </div>
+  </div>
+
+  <!-- 规则框 留空 -->
+  <div class="rules">
+    <h4>活动规则</h4>
+    <div class="empty">规则框留空<br>正文以「规则」弹窗为准，此处由搭建后台填入</div>
+  </div>
+
+</div></div>
+</div>
+
+<!-- ================= 侧栏 ================= -->
+<div class="aside">
+
+  <div class="spec">
+    <h4>9 月 → 10 月 对照</h4>
+    <table>
+      <tr><th style="width:24%">位置</th><th style="width:38%">9 月在跑页</th><th>10 月</th></tr>
+      <tr><td>头图顶行</td><td>中国移动 logo · 咪咕 logo · 手机号 · 登出</td><td class="keep">不变</td></tr>
+      <tr><td>头图贴边</td><td>右上：分享 / 规则；右下：九月奖品地址收集</td><td class="keep">不变，改「十月奖品地址收集」</td></tr>
+      <tr><td>头图主体</td><td>「中国移动用户专属活动~」+ 冰爽"移"夏！趣享福利 + 夏日主视觉</td><td class="chg">摇"移"摇！好礼满枝头 + 秋日果园主视觉</td></tr>
+      <tr><td>快捷导航</td><td>领50GB流量 / 幸运7日签 / 打卡好礼 / 限时福利 / 互动赢奖 / 任务专区</td><td class="keep">不变，图标换秋色</td></tr>
+      <tr><td>查看抽奖机会</td><td>导航下方一条药丸</td><td class="keep">不变</td></tr>
+      <tr><td>活动1 · 50G</td><td>夏日补给站，流量"冻"真格 / 盛夏福利包来啦</td><td>秋日补给站，流量"移"起收 / 秋日福利包来啦　<span class="keep">模块不变</span></td></tr>
+      <tr><td>活动1 · 7日签</td><td>幸运7日签，开袋就有奖（福袋 + 一大三小奖品 + 使用条）</td><td class="keep">不变</td></tr>
+      <tr><td>活动2</td><td>累计打卡（横排三行）</td><td class="keep">不变，奖品换 10 月款</td></tr>
+      <tr><td>活动3</td><td>限时专享活动，趣享盛夏冰爽</td><td>限时专享活动，趣享金秋好礼　<span class="keep">四档不变</span></td></tr>
+      <tr><td>活动4</td><td>消暑好物，冰爽派送中 · <b>射箭</b></td><td class="chg">金秋好物，硕果派送中 · <b>摇一摇</b> + 我的果篮（分档兑换）</td></tr>
+      <tr><td>活动5</td><td>夏日躺平计划，奖品轻松到手 · 9 行任务</td><td>秋日丰收计划，奖品轻松到手　<span class="keep">9 行不变</span></td></tr>
+      <tr><td>底部</td><td>规则块</td><td class="keep">留空，后台填</td></tr>
+    </table>
+  </div>
+
+  <div class="spec">
+    <h4>横幅文案（切图字，可改）</h4>
+    <table>
+      <tr><th style="width:16%">块</th><th>10 月</th><th style="width:36%">备选</th></tr>
+      <tr><td>活动1</td><td>秋日补给站，流量"移"起收</td><td>秋日补给站，流量满仓收</td></tr>
+      <tr><td>7日签</td><td>幸运 7 日签，开袋就有奖</td><td>（沿用 9 月）</td></tr>
+      <tr><td>活动2</td><td>累计打卡，限量好礼抢先领</td><td>（沿用 9 月）</td></tr>
+      <tr><td>活动3</td><td>限时专享活动，趣享金秋好礼</td><td>限时专享活动，金秋周周有礼</td></tr>
+      <tr><td>活动4</td><td>金秋好物，硕果派送中</td><td>丰收好物，摇树派送中</td></tr>
+      <tr><td>活动5</td><td>秋日丰收计划，奖品轻松到手</td><td>秋日囤礼计划，奖品轻松到手</td></tr>
+    </table>
+  </div>
+
+  <div class="spec">
+    <h4>头图 Slogan 候选（头图放的是 ①）</h4>
+    <table>
+      <tr><th style="width:8%">#</th><th>主标题</th><th style="width:22%">落点</th></tr>
+      <tr><td>①</td><td><b>摇"移"摇！好礼满枝头</b></td><td>移＝一</td></tr>
+      <tr><td>②</td><td>摇"移"摇，硕果送好礼</td><td>移＝一</td></tr>
+      <tr><td>③</td><td>摇"移"摇，秋礼满怀</td><td>移＝一</td></tr>
+      <tr><td>④</td><td>金秋"移"摇，好礼即得</td><td>移＝一</td></tr>
+      <tr><td>⑤</td><td>摇一摇，好礼"咕"咚落</td><td>咕＝咕咚</td></tr>
+      <tr><td>⑥</td><td>金秋摇好礼</td><td>稳妥版</td></tr>
+    </table>
+  </div>
+
+  <div class="spec">
+    <h4>设计说明</h4>
+    <ul>
+      <li><span class="lab">主视觉：</span>秋日果园——挂满果子的树为主体，话费券 / 流量 / 实物散落（对应 9 月冰桶里的奖品堆）；纹样 / 剪影优先，不做写实风景照铺底</li>
+      <li><span class="lab">摇一摇：</span>点按钮 → 整棵树摇 2—3 秒 → 一颗果子掉落裂开 → 后台开奖弹结果。前端不算数，后端与射箭一致</li>
+      <li><span class="lab">奖品露出：</span>果子就是奖品位，对应 9 月冰块里的奖品；「我的奖品」贴边入口沿用 9 月位置</li>
+      <li><span class="lab">7 日签 / 打卡 / 任务：</span>结构、文案、数值均照 9 月抄，<span class="warn">数值（100 元话费 / 10GB / 10 天 / 18 天 / +5 次）沿用 9 月，10 月是否变动待确认</span></li>
+      <li><span class="lab">果篮：</span>每摇一次必得 1 个果子（不看中没中）；三档兑换（示意 10 / 20 / 30 个）；会员每次 2 个；月底清零。后端 1 个计数字段 + 一张兑换表，可复用省级福利中心「能量兑换」组件</li>
+      <li><span class="warn">口径：</span>树上挂奖品，规则弹窗须写「奖品随机发放，与展示位置无关」</li>
+      <li><span class="warn">IP：</span>9 月奖品里的小黄人属第三方 IP，10 月不默认延续，打卡奖品已改占位</li>
+    </ul>
+  </div>
+
+  <div class="spec">
+    <h4>进 Figma 前要定的口径（原型上不画）</h4>
+    <ul>
+      <li><span class="lab">活动时间：</span>暂定 2026-09-30 17:00 — 10-31 17:00，未确认前对外只写「暂定至 10 月 31 日」</li>
+      <li><span class="lab">固定权益：</span>50G 是否延续、福袋奖池与每月 7 次、打卡门槛 10/18 天、周专享四档</li>
+      <li><span class="lab">摇一摇：</span>每日次数与来源、会员额外次数、实物奖品清单</li>
+      <li><span class="lab">果篮：</span>各档果子数、三档奖品、每月限兑次数、是否月底清零、会员倍率、是否与「我的奖品」合并展示</li>
+      <li><span class="lab">Figma 时补：</span>各模块弹窗（二次确认 / 结果 / 次数用完 / 未登录 / 北京用户 50G 排除 / 果子兑换确认与成功 / 果子明细）、任务行三态、设计说明卡</li>
+    </ul>
+  </div>
+
+</div>
+</div>
